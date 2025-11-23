@@ -1,0 +1,75 @@
+body {
+	font-family: 'Jost', sans-serif;
+	position: absolute;
+	left: 50%;
+	margin-top: 4rem;
+	margin-left: -20rem;
+	max-width: 40rem;
+
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
+nav {
+	min-width: 8rem;
+}
+	nav img {
+		width: 100%;
+	}
+	nav .sticky {
+		position: sticky;
+		top: 1rem;
+	}
+h1 {
+	margin: 0;
+	font-size: 4em;
+	font-weight: normal;
+}
+hr {
+	margin: 2rem 0rem 2rem 0rem;
+	border: none;
+	background: #888;
+	height: 1px;
+}
+a {
+	text-decoration: none;
+	color: #36c;
+} 
+	a:focus,a:hover {
+		text-decoration: underline;
+		text-decoration-thickness: 3px;
+	}
+
+nav ul {
+	list-style-type: none;
+	padding-inline-start: 0;
+}
+	nav ul li {
+		margin-bottom: 1rem;
+	}
+
+
+article ul {
+	list-style-type: lower-roman;
+}
+
+footer ul {
+    list-style: none;
+	padding-inline-start: 0;
+	color: #666;
+}
+
+footer li {
+	margin-top: 1rem;
+}
+
+/* Tweak the body margins and jazz on small screens */
+@media only screen and (max-width: 768px) {
+	body {
+		position: relative;
+		margin-top: 4rem;
+		margin-left: 0;
+	    left: 0;
+    	max-width: 95%;
+	}
+}
